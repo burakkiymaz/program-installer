@@ -8,6 +8,13 @@ function init(){
     list_programs
     install_check
     installer
+    echo
+    echo "Third step! I will install... "
+    echo "I'm just kidding there is no third step... :D All of your programs are installed."
+    echo
+    echo "Enjoy with your installed programs. "
+    echo
+
     exit 0
 }
 #This function is asking to user "are you sure?"
@@ -45,13 +52,10 @@ function installer() {
             chmod +x programs/$i # this command gives execute permission to this program.
             ./programs/$i # run command
             echo "|---" $i "installed.."
+            echo
+            echo "#####################################################################"
+            echo
         done
-    echo
-    echo "Third step! I will install... "
-    echo "I'm just kidding there is no third step... :D All of your programs are installed."
-    echo
-    echo "Enjoy with your installed programs. "
-    echo
 }
 
 # Program Starting Point
