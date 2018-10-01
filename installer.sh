@@ -15,7 +15,7 @@ function install_check() {
         echo -e 'You selected \e[1m\e[31m"NO"\e[0m\e[39m. Please be sure when you call me.'
         exit 0
     else
-        echo 'You typed the wrong letter. Exitting...'
+        echo 'You typed wrong letter. Exitting...'
         exit 1
     fi
 }
@@ -33,8 +33,6 @@ function installer() {
     echo
     for i in $( ls programs/ ); do # for loop for install all of programs inside programs folder.
             echo -e "\e[1m\e[32m|--- ${i%.*} installing..\e[0m\e[39m"
-
-            echo "File type: ${i##*.}"
             
             if [[ ${i##*.} == [Ss][Hh] ]];
             then
